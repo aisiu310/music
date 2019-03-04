@@ -1,0 +1,175 @@
+.clearfix,
+#wrap .content .tap-content,
+#wrap .content .tap-content > ul.list {
+  *zoom: 1;
+}
+.clearfix::after,
+#wrap .content .tap-content::after,
+#wrap .content .tap-content > ul.list::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#wrap {
+  position: relative;
+  font-size: 0;
+}
+#wrap .content {
+  position: absolute;
+  top: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#wrap .content .nav {
+  position: relative;
+  box-sizing: border-box;
+  height: 2.62222222rem;
+  padding: 0.45925926rem 0 0.20740741rem 0;
+  background-color: #eee;
+}
+#wrap .content .nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  background-color: #000000;
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  #wrap .content .nav::after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  #wrap .content .nav::after {
+    transform: scaleY(0.3333333);
+  }
+}
+#wrap .content .nav .list {
+  white-space: nowrap;
+  float: left;
+}
+#wrap .content .nav .list li {
+  display: inline-block;
+  height: 1.91111111rem;
+  line-height: 1.91111111rem;
+  padding: 0 0.56296296rem 0 0.56296296rem;
+}
+#wrap .content .nav .list li a {
+  font-size: 0.97777778rem;
+  color: #020202;
+}
+#wrap .content .nav .list li.active {
+  background-color: #690;
+}
+#wrap .content .nav .list li.active a {
+  color: #fff;
+}
+#wrap .content .tap-wrap {
+  overflow: hidden;
+  width: 15.4962963rem;
+  background-color: #fff;
+  margin: 0 auto;
+  font-size: 0.65185185rem;
+}
+#wrap .content .tap-wrap .tap-head {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+}
+#wrap .content .tap-wrap .tap-head h2 {
+  float: left;
+  font-size: 0.97777778rem;
+}
+#wrap .content .tap-wrap .tap-head span {
+  float: right;
+  vertical-align: middle;
+}
+#wrap .content .tap-wrap .tap-head span i {
+  font-size: 0.97777778rem;
+  vertical-align: middle;
+}
+#wrap .content .tap-nav {
+  position: relative;
+  width: 100%;
+  height: 1.55555556rem;
+  line-height: 1.55555556rem;
+}
+#wrap .content .tap-nav a {
+  text-align: center;
+  margin-right: 0.22222222rem;
+  color: #6b6b6b;
+}
+#wrap .content .tap-nav .smallG {
+  position: absolute;
+  left: 0;
+  bottom: 0.14814815rem;
+  width: 1.33333333rem;
+  height: 0.13333333rem;
+  background-color: #6f900d;
+  transition: 1s transfrom;
+}
+#wrap .content .tap-content {
+  width: 300%;
+}
+#wrap .content .tap-content > ul {
+  float: left;
+  width: 33.3333%;
+}
+#wrap .content .tap-content > ul.loading {
+  opacity: 0;
+  height: 7.40740741rem;
+  background: url("../img/loading.gif") no-repeat;
+  background-position: center ;
+}
+#wrap .content .tap-content > ul.list li {
+  box-sizing: border-box;
+  float: left;
+  width: 7.4962963rem;
+  margin: 0.07407407rem;
+  padding: 0.11851852rem;
+  background-color: #efefef;
+}
+#wrap .content .tap-content > ul.list li .top a {
+  font-size: 0.59259259rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap .content .tap-content > ul.list li .top a img {
+  width: 100%;
+}
+#wrap .content .tap-content > ul.list li .top a p {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #696969;
+}
+#wrap .content .tap-content > ul.list li .bottom .play {
+  float: left;
+  margin-right: 0.44444444rem;
+}
+#wrap .content .tap-content > ul.list li .bottom .play i {
+  display: inline-block;
+  background: url("../img/ice.png") no-repeat 0.07407407rem 0.22222222rem;
+  width: 0.74074074rem;
+  height: 0.74074074rem;
+}
+#wrap .content .tap-content > ul.list li .bottom .play span {
+  color: #696969;
+}
+#wrap .content .tap-content > ul.list li .bottom .comment {
+  float: left;
+}
+#wrap .content .tap-content > ul.list li .bottom .comment i {
+  display: inline-block;
+  background: url("../img/ice.png") no-repeat 0 -0.59259259rem;
+  width: 0.74074074rem;
+  height: 0.74074074rem;
+}
+#wrap .content .tap-content > ul.list li .bottom .comment span {
+  color: #696969;
+}
